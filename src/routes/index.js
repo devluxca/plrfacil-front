@@ -1,12 +1,13 @@
 import { wrap } from "svelte-spa-router/wrap"
 
-import { Login, Register } from '@pages/auth'
-
 export const routes = {
     '/login': wrap({
-        component: Login
+        asyncComponent: () => import('../pages/auth/login/Login.svelte')
     }),
     '/register': wrap({
-        component: Register
+        asyncComponent: () => import('../pages/auth/register/Register.svelte')
+    }),
+    '/first-access': wrap({
+        asyncComponent: () => import('../pages/first-access/FirstAccess.svelte')
     })
 }
