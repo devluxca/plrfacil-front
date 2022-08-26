@@ -14,6 +14,12 @@
     "vite": "^3.0.7"
   },
   "dependencies": {
-    "sveltestrap": "^5.9.0"
+    "@imask/svelte": "^6.4.2",
+    "ky": "^0.31.1",
+    "ramda": "^0.28.0",
+    "svelte-forms-lib": "^2.0.1",
+    "svelte-spa-router": "^3.3.0",
+    "sveltestrap": "^5.9.0",
+    "yup": "^0.32.11"
   }
 }
