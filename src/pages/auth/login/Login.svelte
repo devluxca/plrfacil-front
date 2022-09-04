@@ -2,6 +2,7 @@
   import { Row, Col, Icon } from 'sveltestrap'
 
   import { Form, InputForm } from '@lib/form'
+  import { Checkbox } from '@lib/checkbox'
 
   import { hasEmail, hasString } from '@utils/validations'
   import { toRegister } from '@utils/routes'
@@ -93,14 +94,7 @@
             </InputForm>
             
             <section class="texts spacing">
-              <label class="checkbox">
-                <input type="checkbox" on:change={changeRememberMe(updateValidateField)} />
-                <div class="square"></div>
-                <small>Lembrar de mim</small>
-                <div class="icon-check">
-                  <Icon name="check" />
-                </div>
-              </label>
+              <Checkbox text="Lembrar de mim" on:change={changeRememberMe(updateValidateField)} />
   
               <small class="text-blue clickable">Esqueci minha senha</small>
             </section>
@@ -129,35 +123,6 @@
       position: absolute;
       bottom: 0px;
       left: -240px;
-    }
-  
-    .icon-check {
-      display: none;
-      position: absolute;
-      left: 2px;
-    }
-    input[type="checkbox"] {
-      display: none;
-    }
-    input[type="checkbox"]:checked ~ .square {
-      background: var(--plrfacil-blue);
-      border: 1px solid var(--plrfacil-blue);
-    }
-    input[type="checkbox"]:checked ~ .icon-check {
-      display: block;
-      color: var(--plrfacil-white);
-    }
-    .square {
-      width: 20px;
-      height: 20px;
-      border: 1px solid var(--plrfacil-dark);
-      border-radius: 5px;
-      margin-right: 5px;
-    }
-    .checkbox {
-      position: relative;
-      display: flex;
-      cursor: pointer;
     }
     .clickable {
       cursor: pointer;

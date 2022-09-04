@@ -27,11 +27,15 @@
   },
   "dependencies": {
     "@imask/svelte": "^6.4.2",
+    "@vime/core": "^5.3.1",
+    "@vime/svelte": "^5.3.1",
     "ky": "^0.31.1",
     "ramda": "^0.28.0",
+    "svelte-dnd-action": "^0.9.19",
     "svelte-forms-lib": "^2.0.1",
     "svelte-spa-router": "^3.3.0",
     "sveltestrap": "^5.9.0",
+    "uuid": "^8.3.2",
     "yup": "^0.32.11"
   }
 }
