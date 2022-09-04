@@ -9,5 +9,8 @@ export const routes = {
     }),
     '/first-access': wrap({
         asyncComponent: () => import('../pages/first-access/FirstAccess.svelte')
+    }),
+    '/landingpage-creator': wrap({
+        asyncComponent: () => import('../pages/landingpage-creator/LandingpageCreator.svelte')
     })
 }
